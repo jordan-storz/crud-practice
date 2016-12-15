@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/jordan-storz/crud-practice/issues"
   },
-  "homepage": "https://github.com/jordan-storz/crud-practice#readme"
+  "homepage": "https://github.com/jordan-storz/crud-practice#readme",
+  "dependencies": {
+    "knex": "^0.12.6",
+    "pg": "^6.1.2"
+  }
 }
