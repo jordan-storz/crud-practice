@@ -1,0 +1,19 @@
+{
+  "name": "crud-practice",
+  "version": "1.0.0",
+  "description": "## sample crud with parter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordan-storz/crud-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordan-storz/crud-practice/issues"
+  },
+  "homepage": "https://github.com/jordan-storz/crud-practice#readme"
+}
