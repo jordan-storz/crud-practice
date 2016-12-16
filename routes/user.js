@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var User = require('../db/user'); // named with capitol U to relate the variable to the database entry
+var Sticker = require('../db/sticker');
 
 router.get('/:id', (req, res) => {
     var id = req.params.id;
@@ -25,5 +26,20 @@ router.get('/:id', (req, res) => {
     }
 })
 
+router.get('/:id/sticker', (req, res) => {
+    var id = req.params.id;
+    if (!isNaN(id)) {
+        Sticker.getStickersByUserId(id)
+            .then(function(result) {
+                res.json(result)
+            })
+    } else {
+        res.json({
+            message: "invalid id"
+        })
+        console.log("invalid id");
+    }
+    // res.send(id) res.send sends back id as text
+})
 
 module.exports = router;
