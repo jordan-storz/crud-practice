@@ -3,6 +3,6 @@ var app = express()
 var userRoutes = require('./routes/user')
 app.use('/user', userRoutes)
 
-app.listen(3000, function() { //app.listen takes two arguments like here, a port number and a function
+app.listen(process.env.PORT || 3000, function() { //app.listen takes two arguments like here, a port number and a function
     console.log("hi");
 })
