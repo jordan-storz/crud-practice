@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jordan-storz/crud-practice#readme",
   "dependencies": {
+    "cors": "^2.8.1",
     "dotenv": "^2.0.0",
     "express": "^4.14.0",
     "knex": "^0.12.6",
