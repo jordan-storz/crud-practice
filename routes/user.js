@@ -42,4 +42,11 @@ router.get('/:id/sticker', (req, res) => {
     // res.send(id) res.send sends back id as text
 })
 
+router.get('/', (req, res) => {
+    User.getAll().then(function(result) {
+        console.log(result);
+        res.json(result);
+    })
+})
+
 module.exports = router;
