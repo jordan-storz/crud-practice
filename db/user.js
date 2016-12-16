@@ -7,5 +7,10 @@ module.exports = {
     },
     getAll: function() {
         return knex.select().table('user')
+    },
+    deactivate: function(id) {
+        return knex('user')
+            .where('id', id)
+            .update('is-active', false)
     }
 }
